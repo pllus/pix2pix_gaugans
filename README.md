@@ -1043,13 +1043,7 @@ D(fake) ≈ 0.1-0.3  (ควรใกล้ 0)
 
 ### 7.3 Datasets
 
-1. **CelebA**:
-   - Liu, Ziwei, et al. "Deep learning face attributes in the wild." ICCV 2015.
-   - 202,599 face images with 40 attributes
-
-2. **Kaggle Human Faces**:
-   - Community-contributed dataset
-   - ~7,200 high-quality face images
+1.  https://www.kaggle.com/datasets/electraawais/cityscape-dataset/code/data
 
 ### 7.4 Tutorials และแหล่งเรียนรู้
 
