@@ -389,9 +389,8 @@ graph TB
 
 ## 4. อธิบายโค้ด PyTorch
 
-โค้ดทั้งหมดเก็บอยู่ใน Jupyter Notebook: **`Untitled copy.ipynb`**
+โค้ดทั้งหมดเก็บอยู่ใน Jupyter Notebook: **`main_workspace.ipynb`**
 
-GitHub Repository: **https://github.com/PluzNtp/Edge-to-Face**
 
 ### 4.1 โครงสร้างโค้ด
 
@@ -754,33 +753,6 @@ d_scaler = torch.cuda.amp.GradScaler()
   - BCEWithLogitsLoss: สำหรับ Discriminator (รวม Sigmoid เข้าไป)
   - L1Loss: สำหรับ pixel-wise reconstruction
 
-### 4.5 ส่วนที่ 4: Inference
-
-```python
-# Inference function
-def generate_face(model, edge_image_path, output_path, device="cuda"):
-    # Setup transforms
-    transform = A.Compose([
-        A.Resize(width=256, height=256),
-        A.Normalize(mean=[0.5, 0.5, 0.5], std=[0.5, 0.5, 0.5], max_pixel_value=255.0),
-        ToTensorV2(),
-    ])
-
-    # Load และ preprocess ภาพ edge
-    edge_img = Image.open(edge_image_path).convert("RGB")
-    edge_array = np.array(edge_img)
-    transformed = transform(image=edge_array)
-    input_tensor = transformed["image"].unsqueeze(0).to(device)
-
-    # Generate face
-    model.eval()
-    with torch.no_grad():
-        generated = model(input_tensor)
-
-    # De-normalize และบันทึก
-    generated = generated * 0.5 + 0.5  # [-1, 1] → [0, 1]
-    save_image(generated, output_path)
-```
 
 **อธิบาย:**
 - โหลดภาพ edge และทำ preprocessing เหมือน training
