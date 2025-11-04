@@ -19,7 +19,7 @@
 ---
 
 ## 1. บทนำและความน่าสนใจของโปรเจค
-<div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
+<div style="display: flex; gap: 20px; justify-content: center; flex-wrap: nowrap;">
 
   <div style="text-align: center;">
     <p><strong>Input</strong></p>
@@ -40,6 +40,7 @@
   </div>
 
 </div>
+
 
 
 ### 1.1 ที่มาและความสำคัญ
