@@ -39,6 +39,11 @@
          alt="Ground Truth Image" style="max-width: 400px; border: 1px solid #ccc; border-radius: 8px;">
   </div>
 
+  <div style="text-align: center;">
+    <p><strong>Result</strong></p>
+    <img src="https://images-ext-1.discordapp.net/external/xPHyMigspXEHYw0KcgvwUtEJnKt4L_pm5LxABrEISIk/https/s6.ezgif.com/tmp/ezgif-6c09f2d8bebfce.gif?width=1592&height=796" 
+         alt="Result" style="max-width: 400px; border: 1px solid #ccc; border-radius: 8px;">
+  </div>
 </div>
 
 
