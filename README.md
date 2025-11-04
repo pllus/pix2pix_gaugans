@@ -1,4 +1,4 @@
-<img width="1485" height="815" alt="image" src="https://github.com/user-attachments/assets/600a376c-252a-48c8-bb15-02717918ae40" />
+
 # รายงานโครงการสุดท้าย (Final Project Report)
 ## วิชา 204466 การเรียนรู้เชิงลึก (Deep Learning)
 
